@@ -122,14 +122,15 @@
      grid-column-start: 1;
      grid-column-end: 3;
      grid-row: 2;
-     line-height: 84.5%;
+     line-height: 83%;
      font-weight: var(--font-weight-fat);
-     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
      color: var(--title-color);
      text-shadow: 4px 4px 0 var(--decor-color);
 }
 
 .header__description {
+     margin-block-start: 5px;
      line-height: 130%;
      grid-column: 1 / 3;
      display: inline-block;
@@ -242,7 +243,7 @@
 }
 
 .footer__title {
-     padding-block-end: 20px;
+     padding-block-end: 21px;
      align-self: center;
      line-height: 83%;
      text-shadow: 2px 2px 0px var(--decor-color);
@@ -277,7 +278,8 @@
      }
 
      .header__title {
-          margin-inline-start: -5px;
+          margin-inline-start: -10px;
+          font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
      }
 
      .header__description {
@@ -289,7 +291,7 @@
           justify-self: end;
           max-width: 364px;
           margin-inline-end: 10px;
-          margin-block-end: 6px;
+          margin-block-end: 10px;
      }
 
      .section {
@@ -404,6 +406,14 @@
           margin-inline-start: 10px;
      }
 
+     .section {
+          margin-block-end: 0px;
+     }
+
+     .section__concentration {
+          padding-block-start: 30px;
+     }
+
      .title__focus {
           margin-inline-start: 10px;
      }
@@ -438,8 +448,12 @@
      }
 
      .section__goldfish {
-          margin-block-start: -20px;
+          padding-block-start: 10px;
           margin-inline-start: 10px;
+     }
+
+     .section__images {
+          padding-block-start: 25px;
      }
 
      .footer {
